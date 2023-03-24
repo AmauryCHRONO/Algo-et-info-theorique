@@ -95,7 +95,29 @@ def hanoi(n,a=1,b=2,c=3):
         print("Déplace un disque du pilier",a,"le pilier",c)
         hanoi(n-1,b,a,c)
 
-hanoi(7)
-        
+# hanoi(7)
+
+# Exo 6
+"""
+1. a) 1
+   b) n
+   c) n/2
+"""
+import math
+def dichotomie(k, liste_tri, ind = 0):
+
+    if len(liste_tri) == 0:
+        return -1
+    
+    if k == liste_tri[math.floor(len(liste_tri)/2)]:
+        return math.floor(len(liste_tri)/2)+ind
+    
+    if k < liste_tri[math.floor(len(liste_tri)/2)]:
+        return dichotomie(k,liste_tri[:math.floor(len(liste_tri)/2)], ind)
+    
+    if k > liste_tri[math.floor(len(liste_tri)/2)]:
+        return dichotomie(k,liste_tri[math.floor(len(liste_tri)/2)+1:], ind+len(liste_tri[:math.floor(len(liste_tri)/2)+1]))
     
     
+test = [1,3,7,8,9,11,15,16]
+# print(dichotomie(7, test))
