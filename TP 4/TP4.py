@@ -1,3 +1,9 @@
+#!/usr/bin/env python
+# coding: utf-8
+"""
+author : Amaury CHRONOWSKI
+
+"""
 # Exo 1
 
 def tri_selection(liste_nontri):
