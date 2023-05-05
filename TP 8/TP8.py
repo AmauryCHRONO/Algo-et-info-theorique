@@ -42,6 +42,7 @@ class Trajet:
         return tmp
         
     def calc_longueur(self):
+        self.longueur = 0
         for num, ville in enumerate(self.list_villes):
             self.longueur += ville.distance_vers(self.list_villes[num - 1])
 
