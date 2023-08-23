@@ -9,5 +9,5 @@ This module aims to teach us how to: write optimised and scalable code and use e
 - TP n°5 : Trees
 - TP n°6 : Graphs
 - TP n°7 : Graphs
-- TP n°8 : Algorithmes génétiques
-- TP n°9 : Programmation linéaire
+- TP n°8 : Genetic algorithms
+- TP n°9 : Linear programming
